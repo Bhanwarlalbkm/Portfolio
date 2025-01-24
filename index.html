@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Bhanwar - Portfolio</title>
+
+    <style>
+       
+    
+        .skills-container {
+          width: 100%;
+          max-width: 1200px;
+          padding: 60px;
+          background: #ffffff;
+          border-radius: 10px;
+          margin-left: 100px;
+          /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+        }
+    
+        .skill {
+          margin-bottom: 20px;
+        }
+    
+        .skill:last-child {
+          margin-bottom: 0;
+        }
+    
+        .skill-name {
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+    
+        .skill-bar {
+          position: relative;
+          background: #e0e0e0;
+          border-radius: 5px;
+          overflow: hidden;
+          height: 20px;
+        }
+    
+        .skill-bar-fill {
+          height: 100%;
+          background: linear-gradient(90deg, #69d0b8, #01533b);
+          width: 0;
+          transition: width 1s ease-in-out;
+        }
+    
+        .skill-bar-fill span {
+          position: absolute;
+          right: 10px;
+          top: 0;
+          bottom: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #1b0707;
+          font-size: 14px;
+          font-weight: bold;
+        }
+    
+        .skill-bar[data-percent="90"] .skill-bar-fill {
+          width: 90%;
+        }
+    
+        .skill-bar[data-percent="75"] .skill-bar-fill {
+          width: 75%;
+        }
+    
+        .skill-bar[data-percent="60"] .skill-bar-fill {
+          width: 60%;
+        }
+    
+        .skill-bar[data-percent="45"] .skill-bar-fill {
+          width: 45%;
+        }
+     
+        .skill-bar[data-percent="70"] .skill-bar-fill {
+          width: 70%;
+        }
+
+        .skill-bar[data-percent="50"] .skill-bar-fill {
+          width: 50%;
+        }
+      </style>
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header class="header">
+  <a href="#home" class="logo">BHANWARLAL</a>
+
+  <i class='bx bx-menu' id="menu-icon"></i>
+
+  <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services"> SKILLS </a>
+    <!-- <a href="#testimonials">Award-Winning     </a> -->
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+
+    <!-- Home Section -->
+
+    <section id="home" class="home">
+        <div class="home-img">
+            <img src="assets/me3.jpg" alt="Profile Image">
+        </div>
+        <div class="home-content">
+            <h3>Hello, Myself</h3>
+            <h1>Bhanwar lal</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>Hi, I’m Bhanwar Lal, a passionate full-stack developer with expertise in JavaScript, React, Python, and SQL. I love building innovative projects, blending creativity with technical skills to craft impactful solutions.</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/bhanwar-lal-26859b301/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Bhanwarlalbkm"><i class='bx bxl-github' ></i></a>
+                <a href=" not found!"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/bhanwarlal8445/"><i class='bx bxl-instagram' ></i></a>
+            </div>
+            <a href="cv.pptx" download="cv.pptx" class="btn">Download CV</a>
+        </div>
+
+        
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span> </h2>
+            <h3>I'm a <span>Frontend Developer</span></h3>
+            <p>Hi, I’m Bhanwar Lal, a Full-Stack Developer in training pursuing a BCA in Full-Stack Development at Jaipur National University. I’m passionate about building efficient, user-friendly applications and have experience with HTML, CSS, JavaScript, React, SQL, Python, and C++.
+
+              I’ve worked on projects like a bot-based ticketing system and an esports website, participated in hackathons, and explored technologies like AI, ML, and cloud computing at events like Indore DevFest.
+              
+              With a strong work ethic and a love for problem-solving, I’m excited to keep learning and creating impactful solutions</p>
+            <a href="#" class="btn">Read more</a>
+        </div>
+        <div class="about-img">
+            <img src="assets/about.jpeg" alt="">
+        </div>
+    </section>
+
+   <!-- Services Section -->
+     <section id="services" class="services">
+        <h2 class="heading">My <span>SKILLS</span> </h2>
+        <div class="skills-container">
+            <div class="skill">
+              <div class="skill-name">HTML</div>
+              <div class="skill-bar" data-percent="90">
+                <div class="skill-bar-fill">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-name">CSS</div>
+              <div class="skill-bar" data-percent="75">
+                  <div class="skill-bar-fill">
+                      <span>75%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">SQL</div>
+                <div class="skill-bar" data-percent="70">
+                  <div class="skill-bar-fill">
+                    <span>70%</span>
+                  </div>
+                </div>
+              </div>
+            <div class="skill">
+              <div class="skill-name">JavaScript</div>
+              <div class="skill-bar" data-percent="60">
+                <div class="skill-bar-fill">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+              
+            <div class="skill">
+                <div class="skill-name">C</div>
+                <div class="skill-bar" data-percent="50">
+                  <div class="skill-bar-fill">
+                    <span>50%</span>
+                  </div>
+                </div>
+              </div>
+
+            <div class="skill">
+              <div class="skill-name">React</div>
+              <div class="skill-bar" data-percent="45">
+                <div class="skill-bar-fill">
+                  <span>45%</span>
+                </div>
+              </div>
+            </div>
+            
+             
+          </div>
+        </body>
+        </html>
+        
+         
+<!--         
+    </section>
+
+    
+    <!-- Testimonials Section -->
+
+    <!-- <section id="testimonials" class="testimonials">
+        <div class="testimonials-box">
+            <h2 class="heading">Award-Winning</h2>
+
+            <div class="wrapper">
+                <div class="testimonial-item">
+                    <img src="assets/01.jpeg" alt="">
+                    <h2>Marilyn</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius reiciendis consequatur officia
+                        recusandae porro at?</p>
+                </div>
+
+                <div class="testimonial-item">
+                    <img src="assets/02.jpeg" alt="">
+                    <h2>Julia</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius reiciendis consequatur officia
+                        recusandae porro at?</p>
+                </div>
+
+                <div class="testimonial-item">
+                    <img src="assets/03.jpeg" alt="">
+                    <h2>Aleksa</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius reiciendis consequatur officia
+                        recusandae porro at?</p>
+                </div>
+            </div>
+        </div>
+    </section> --> -->
+
+    <!-- Contact Section -->
+
+    <section id="contact" class="contact">
+        <h2 class="heading" style="color: black;">Contact <span>Me</span></h2>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <div class="input-box">
+                   <input type="hidden" name="access_key" value="e0d9b766-e5eb-4014-a927-22b93ef3994d">
+                <input type="text" name="name" placeholder="Full Name">
+                <input type="email" name="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" name="number" placeholder="Phone Number">
+                <input type="text" name="subject" placeholder="Email Subject">
+            </div>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/bhanwar-lal-26859b301/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Bhanwarlalbkm"><i class='bx bxl-github' ></i></a>
+                <a href="not found!"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/bhanwarlal8445/"><i class='bx bxl-instagram' ></i></a>
+        </div>
+        <p class="copyright">
+            © Bhanwar Lal - All Rights Reserved
+        </p>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
